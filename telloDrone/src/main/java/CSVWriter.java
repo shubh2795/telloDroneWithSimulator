@@ -1,4 +1,5 @@
 
+import  java.util.Scanner;
 import java.io.FileWriter;
 public class CSVWriter
 {
@@ -7,15 +8,26 @@ public class CSVWriter
     //private static final String NEW_LINE_SEPARATOR = "\n";
 
     @SuppressWarnings("unchecked")
-    public  void write(String droneCommand ) throws Exception {
+    public  void write() throws Exception {
  try {
-            FileWriter fileWriter = new FileWriter("Mission.csv");
+            Scanner cin= new Scanner(System.in);
+            String fileName= "Mission.csv";
+            FileWriter fileWriter = new FileWriter(fileName);
+            System.out.println("Enter the no. of commands");
+            int noOfCommands= cin.nextInt();
+            for(int i=0; i<noOfCommands;i++){
+                String droneCommand= cin.next();
+                fileWriter.append(droneCommand);
+                fileWriter.append(COMMA_DELIMITER);
+            }
+            fileWriter.flush();
+            fileWriter.close();
+
 
             //Add a new line separator after the header
 
             //Write a new student object list to the CSV file
-            fileWriter.append(droneCommand);
-            fileWriter.append(COMMA_DELIMITER);
+
 
 
             System.out.println("CSV file was created successfully !!!");

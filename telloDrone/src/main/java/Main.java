@@ -18,15 +18,17 @@ class Main {
         // passing the droneaddress and port to the communicator
         Communicator communicator = new Communicator(droneAddress, dronePort);
 
-        System.out.println("Select the drone mission");
-        System.out.println("Enter 1 for Mission1: Takeoff Forward Backward Land");
-        System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
-        System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
+//        System.out.println("Select the drone mission");
+//        System.out.println("Enter 1 for Mission1: Takeoff Forward Backward Land");
+//        System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
+//        System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
 
-        int selectMission = scanner.nextInt();
+        //int selectMission = scanner.nextInt();
+        Mission1 mission1= new Mission1();
+        String[] requestArray=mission1.sendCommand();
 
         Flyer flyer = new Flyer();
-        flyer.fly(selectMission, communicator);
+        flyer.fly(requestArray, communicator);
 
 
     }
