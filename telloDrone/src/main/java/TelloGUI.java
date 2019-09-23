@@ -11,7 +11,7 @@ public class TelloGUI {
     private JTextField BatteryStatusText;
     private JTextField DroneSpeedText;
     private JTextField FlightTimeText;
-
+    private JFormattedTextField EnterCommandTetx;
 
 
     public TelloGUI() {
