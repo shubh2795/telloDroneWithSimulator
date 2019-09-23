@@ -1,0 +1,118 @@
+{
+  "TelloCommands": [
+    {
+      "CommandNumber": 1,
+      "Command": "Command",
+      "CommandDescription": "Tello Drone: SDK mode",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 2,
+      "Command": "takeoff",
+      "CommandDescription": "Tello Drone: auto takeoff mode",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 3,
+      "Command": "land",
+      "CommandDescription": "Tello Drone: auto land mode",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 4,
+      "Command": "up 30",
+      "CommandDescription": "Tello Drone: Ascending 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 5,
+      "Command": "down 30",
+      "CommandDescription": "Tello Drone: Descending 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 6,
+      "Command": "left 30",
+      "CommandDescription": "Tello Drone: fly left 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 7,
+      "Command": "right 30",
+      "CommandDescription": "Tello Drone: fly right 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 8,
+      "Command": "forward 30",
+      "CommandDescription": "Tello Drone: fly forward 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 9,
+      "Command": "back 30",
+      "CommandDescription": "Tello Drone: fly back 30 Cms",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 10,
+      "Command": "cw 360",
+      "CommandDescription": "Tello Drone: Rotating clockwise 360",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 11,
+      "Command": "ccw 360",
+      "CommandDescription": "Tello Drone: Rotating counter clockwise 360",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 12,
+      "Command": "flip l",
+      "CommandDescription": "Tello Drone: Flipping left",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 13,
+      "Command": "flip r",
+      "CommandDescription": "Tello Drone: Flipping right",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 14,
+      "Command": "flip f",
+      "CommandDescription": "Tello Drone: Flipping forward",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 15,
+      "Command": "flip b",
+      "CommandDescription": "Tello Drone: Flipping backwards",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 16,
+      "Command": "sn?",
+      "CommandDescription": "Flying Tello Drone Serial Number:",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 17,
+      "Command": "battery?",
+      "CommandDescription": "Tello Drone current battery percentage:",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 18,
+      "Command": "time?",
+      "CommandDescription": "Tello Drone current flight time:",
+      "Expected Response": "ok"
+    },
+    {
+      "CommandNumber": 19,
+      "Command": "speed?",
+      "CommandDescription": "Tello Drone current speed (cms/sec):",
+      "Expected Response": "ok"
+    }
+  ]
+}
