@@ -1,3 +1,4 @@
+import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,7 +12,8 @@ public class TelloGUI {
     private JTextField BatteryStatusText;
     private JTextField DroneSpeedText;
     private JTextField FlightTimeText;
-    private JFormattedTextField EnterCommandTetx;
+    private JTextField EnterCommandText;
+    private JButton sendButton;
 
 
     public TelloGUI() {
