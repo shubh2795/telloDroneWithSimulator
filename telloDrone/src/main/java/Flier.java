@@ -1,13 +1,13 @@
-class Flyer {
+class Flier implements Runnable{
 
-    public void fly(String[] requestArray, Communicator communicator) throws Exception {
-        String droneMessage;
+    public void run(){
+        System.out.println("Thread for refreshing drone state ");
+        //drone state method
+    }
 
-        for(int i=0;i<requestArray.length;i++){
-            droneMessage=requestArray[i];
-            System.out.println(droneMessage);
-            communicator.sendAndReceive(droneMessage);
-        }
+
+    public void fly() throws Exception {
+        
 //        if (selectMission == 1) {
 //            Mission1 mission1 = new Mission1();
 //            String[] droneCommand = mission1.sendCommand();

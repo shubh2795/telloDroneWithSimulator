@@ -23,12 +23,10 @@ class Main {
 //        System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
 //        System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
 
-        //int selectMission = scanner.nextInt();
-        Mission1 mission1= new Mission1();
-        String[] requestArray=mission1.sendCommand();
 
-        Flyer flyer = new Flyer();
-        flyer.fly(requestArray, communicator);
+        Mission1 mission1= new Mission1();
+
+
 
 
     }

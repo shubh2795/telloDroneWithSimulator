@@ -1,5 +1,5 @@
 
 interface Mission {
     // ABSTRACT METHOD
-    public String[] sendCommand() throws Exception;
+    public void  sendCommand() throws Exception;
 }
