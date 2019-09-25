@@ -34,10 +34,12 @@ class Communicator {
 		}
 		Retries--;
 		System.out.println("Remaining retries for sending data to the drone: " + Retries);
-		receiveReply(droneMessage);
+
+
+		receiveReply();
 	}
 
-	public  String receiveReply(String droneMessage) throws Exception {
+	public  String receiveReply() throws Exception {
 		byte[] receivedData;
 		int retries = 3;
 		String droneReply = null;
@@ -65,11 +67,10 @@ class Communicator {
 			return "garbage values";
 
 		}
-		if ((droneMessage.equals("takeoff")) || (droneMessage.equals("cw 360")) || (droneMessage.equals("land"))
-				|| (droneMessage.equals("stop")) || (droneMessage.equals("left 25"))
-				|| (droneMessage.equals("right 25")) || (droneMessage.equals("flip r")) && droneReply.equals("ok")) {
+		if ( droneReply.equals("ok")) {
 			Thread.sleep(3000);
 		}
+
 		return droneReply;
 	}
 

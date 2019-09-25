@@ -2,15 +2,27 @@
 
 
 
-public class Mission1 implements Mission  {
+public class Mission1 extends Mission  {
 
     @Override
-    public void sendCommand () throws Exception {
+    public String[] readCSV () throws Exception {
+        String[] requestArray;
+        CSVReader csvReader = new CSVReader();
+         requestArray= csvReader.read();
+         return requestArray;
+
+    }
+
+    @Override
+    public void writeCSV () throws Exception {
         CSVWriter csvWriter =  new CSVWriter();
         csvWriter.write();
-        CSVReader csvReader = new CSVReader();
-        String[] requestArray= csvReader.read();
-        Communicator communicator= new Communicator();
+    }
+
+
+    @Override
+    public void sendCommand (String[] requestArray) throws Exception{
+         Communicator communicator= new Communicator();
         for(int i=0;i<requestArray.length;i++){
           String droneMessage=requestArray[i];
             System.out.println(droneMessage);
