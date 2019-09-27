@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import org.jfree.chart.*;
 
 public class TelloGUI {
     private JPanel TelloDroneGUI;

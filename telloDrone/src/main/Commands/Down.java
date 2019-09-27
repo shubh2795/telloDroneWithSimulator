@@ -1,11 +1,18 @@
-import java.net.DatagramSocket;
+package Users.shubh.IdeaProjects.Homework2.telloDrone.src.main.Commands;
 
-public class Down implements Messages {
-    public void doAction(Communicator communicator, String request, DatagramSocket udpClient) throws Exception {
-        String response;
-        System.out.println("Put Drone in "+request+" mode.");
-        communicator.Send(request,udpClient);
-        response= communicator.Receive(udpClient);
-        System.out.println("Response received from drone is "+response);
+
+public class Down implements TelloCommand {
+    protected String command;
+
+    public composeCommand(String command) {
+        this.command = command;
+    }
+
+    public String getCommand() {
+        return command;
+    }
+
+    public void setCommand(String command) {
+        this.command = command;
     }
 }

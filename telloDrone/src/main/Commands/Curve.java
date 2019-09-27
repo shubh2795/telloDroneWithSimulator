@@ -1,7 +1,6 @@
 package Users.shubh.IdeaProjects.Homework2.telloDrone.src.main.Commands;
 
-
-public class TakeOff implements TelloCommand {
+public class Curve implements TelloCommand {
     protected String command;
 
     public composeCommand(String command) {
