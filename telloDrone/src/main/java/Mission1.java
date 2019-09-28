@@ -1,32 +1,19 @@
-
-
-
-
-public class Mission1 extends Mission  {
+import Commands.TelloCommandValues;
+public class Mission1 implements Mission {
 
     @Override
-    public String[] readCSV () throws Exception {
-        String[] requestArray;
-        CSVReader csvReader = new CSVReader();
-         requestArray= csvReader.read();
-         return requestArray;
+    public void sendCommand() {
+        // passing commands from mission to communicator as per the rubric comments by the TA
+        Communicator communicator = new Communicator();
+        String[] droneCommand = { TelloCommandValues.COMMAND_MODE, TelloCommandValues.TAKE_OFF,TelloCommandValues.LAND };
 
-    }
-
-    @Override
-    public void writeCSV () throws Exception {
-        CSVWriter csvWriter =  new CSVWriter();
-        csvWriter.write();
-    }
-
-
-    @Override
-    public void sendCommand (String[] requestArray) throws Exception{
-         Communicator communicator= new Communicator();
-        for(int i=0;i<requestArray.length;i++){
-          String droneMessage=requestArray[i];
-            System.out.println(droneMessage);
-            communicator.sendCommand(droneMessage);
-        }
+        for(int i=0;i<droneCommand.length;i++ ){
+            try {
+                communicator.sendCommand(droneCommand[i]);
+            }
+            catch (Exception e){
+                System.out.println(e);
+            }
+            }
     }
 }

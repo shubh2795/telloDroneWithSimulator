@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import java.net.*;
-
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 class Main {
 
     public static void main(String[] args) throws Exception {
@@ -18,16 +21,13 @@ class Main {
         // passing the droneaddress and port to the communicator
         Communicator communicator = new Communicator(droneAddress, dronePort);
 
-//        System.out.println("Select the drone mission");
-//        System.out.println("Enter 1 for Mission1: Takeoff Forward Backward Land");
-//        System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
-//        System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
-
-
-        Mission1 mission1= new Mission1();
+        Flier flier = new Flier();
+        flier.fly();
 
 
 
 
+
+    JsonReader.Reader();
     }
 }

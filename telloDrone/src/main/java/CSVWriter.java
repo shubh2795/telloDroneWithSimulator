@@ -5,7 +5,7 @@ public class CSVWriter
 {
     //Delimiter used in CSV file
    private static final String COMMA_DELIMITER = ",";
-    //private static final String NEW_LINE_SEPARATOR = "\n";
+    private static final String NEW_LINE_SEPARATOR = "\n";
 
     @SuppressWarnings("unchecked")
     public  void write() throws Exception {
@@ -19,6 +19,7 @@ public class CSVWriter
                 String droneCommand= cin.next();
                 fileWriter.append(droneCommand);
                 fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(NEW_LINE_SEPARATOR);
             }
             fileWriter.flush();
             fileWriter.close();
