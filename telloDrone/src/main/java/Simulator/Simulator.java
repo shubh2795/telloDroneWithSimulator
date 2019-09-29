@@ -1,15 +1,30 @@
 package Simulator;
+import java.io.IOException;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import DroneWorld.Communicator;
 
 
 public abstract class Simulator {
+
+    String receivedCommand;
+    int port;
+    InetAddress address;
+
+    //Template method pattern
+    abstract  boolean validateCommands(String receivedCommand, int port, InetAddress address)throws IOException ;
+    abstract void validateSequence()throws IOException;
+
+    public final void validate()throws Exception{
+        // template
+
+        validateCommands(receivedCommand,  port,  address);
+        validateSequence();
+    }
+
     public static final String reply = "ok";
     public static final String error = "Invalid Command";
 
-    abstract void validateCommands();
-    abstract void validateSequence();
 
 
 
@@ -23,7 +38,12 @@ public abstract class Simulator {
         int recievedPort = communicator.getDestinationPort();
         InetAddress receivedAddress =communicator.getDestinationAddress();
 
-        boolean isValid= Validation.validate(receivedData,recievedPort,receivedAddress);
+        //execute validations as per the template
+        Simulator simulator = new Validation();
+        simulator.validate();
+
+       // = Validation.validate(receivedData,recievedPort,receivedAddress);
+        boolean isValid= false;
 
        if (isValid == false){
         communicator.sendCommand(error);

@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 import Commands.*;
 
-public class Validation {
+public class Validation extends Simulator {
 //        if (receivedCommand.length>1){}
-    public static boolean validate(String receivedCommand, int port, InetAddress address) throws IOException {
+    @Override
+    boolean validateCommands(String receivedCommand, int port, InetAddress address) throws IOException {
 
 
         String [] recievedCommand;
@@ -36,5 +37,11 @@ public class Validation {
        return false;
 
     }
+
+    @Override
+      void validateSequence() throws IOException {
+
+    }
+
     }
 

@@ -2,82 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cd173-2edc-4b51-b1b1-40d1fd95b51e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Simulator/udpBaseClient_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Simulator/udpBaseClient_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Simulator/udpBaseServer_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Simulator/udpBaseServer_2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/CSVReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/CSVWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Back.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Back.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Ccw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Ccw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/CurrentBattery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/CurrentBattery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/CurrentFlyTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/CurrentFlyTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/CurrentSpeed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/CurrentSpeed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Curve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Curve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Cw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Cw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/DisableVideoStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/DisableVideoStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Down.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Down.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Emergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Emergency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/EnableVideoStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/EnableVideoStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Flip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Flip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Forward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Forward.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Go.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Go.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Land.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Left.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Left.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Right.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Right.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Sdk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Sdk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Serial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Serial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Speed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Speed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/Stop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/Stop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/TakeOff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/TakeOff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/TelloCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/TelloCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Commands/TelloCommandValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Commands/TelloCommandValues.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Communicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Flier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/JsonReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Mission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Mission1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Mission2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Mission3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CSVReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CSVWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Back.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Back.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Ccw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Ccw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentBattery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentFlyTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentFlyTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentSpeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentSpeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Curve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Cw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Cw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/DisableVideoStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/DisableVideoStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Down.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Down.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Emergency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/EnableVideoStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/EnableVideoStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Flip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Flip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Forward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Forward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Go.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Go.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Right.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Sdk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Sdk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Serial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Serial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Speed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Speed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TakeOff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Up.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Communicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Flier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mission1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mission2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mission3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulator/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator/SimulatorConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulator/Validation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/Validation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="458">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,20 +48,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/SimulatorConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -161,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Mission.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mission2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mission3.java" />
         <option value="$PROJECT_DIR$/src/main/java/Flier.java" />
@@ -209,8 +127,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Missions/customMission.java" />
         <option value="$PROJECT_DIR$/src/main/java/DroneWorld/Flier.java" />
         <option value="$PROJECT_DIR$/src/main/java/Missions/Mission1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Simulator/Validation.java" />
         <option value="$PROJECT_DIR$/src/main/java/Simulator/SimulatorConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Simulator/ValidateSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Simulator/Validation.java" />
         <option value="$PROJECT_DIR$/src/main/java/Simulator/Simulator.java" />
       </list>
     </option>
@@ -270,7 +189,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="318" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569717222272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569729540153" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lib/json-simple-1.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -337,7 +256,7 @@
       <workItem from="1569434409154" duration="2855000" />
       <workItem from="1569450837131" duration="184000" />
       <workItem from="1569453515825" duration="3100000" />
-      <workItem from="1569459562267" duration="53035000" />
+      <workItem from="1569459562267" duration="58934000" />
     </task>
     <task id="LOCAL-00001" summary="Adding UI">
       <created>1569216190831</created>
@@ -357,13 +276,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96281000" />
+    <option name="totallyTimeSpent" value="102180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23600605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -798,27 +717,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/Validation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/ValidateSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="136">
+          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/SimulatorConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="458">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/Simulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
