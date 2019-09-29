@@ -1,17 +1,7 @@
 package Commands;
 
 public class Back implements TelloCommand {
-    protected String command;
-
-    public void composeCommand(String command) {
-        this.command = command;
-    }
-
-    public String getCommand() {
-        return command;
-    }
-
-    public void setCommand(String command) {
-        this.command = command;
+    public static String getCommand() {
+       return TelloCommandValues.Back;
     }
 }

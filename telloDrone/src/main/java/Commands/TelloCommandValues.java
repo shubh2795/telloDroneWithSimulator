@@ -6,13 +6,13 @@ package Commands;
 public class TelloCommandValues {
 
     //Enter command mode.
-    public static final String COMMAND_MODE = "command";
+    public static final String Command = "command";
 
     // Drone takeoff..
-    public static final String TAKE_OFF = "takeoff";
+    public static final String TakeOff = "takeoff";
 
     // Drone Land
-    public static final String LAND = "land";
+    public static final String Land = "land";
 
     // Enable video stream.
     public static final String EnableVideoStream = "streamon";

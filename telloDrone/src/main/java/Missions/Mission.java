@@ -1,10 +1,16 @@
-class Mission3 implements Mission {
+package Missions;
+import DroneWorld.Communicator;
 
-    @Override
-    public void sendCommand() {
 
-        String[] droneCommand = { "command", "takeoff", "cw 360", "right 25", "land" };
+public abstract class Mission {
+
+    abstract void selectMessages();
+
+    //Concrete Method
+    public static void sendCommand( String[] droneCommand ){
         Communicator communicator = new Communicator();
+
+
         for(int i=0;i<droneCommand.length;i++ ){
             try {
                 communicator.sendCommand(droneCommand[i]);
@@ -15,4 +21,5 @@ class Mission3 implements Mission {
         }
 
     }
+
 }

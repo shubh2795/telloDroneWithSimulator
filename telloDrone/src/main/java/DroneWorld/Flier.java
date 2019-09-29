@@ -1,9 +1,12 @@
+package DroneWorld;
 import java.util.Scanner;
-class Flier implements Runnable{
-Communicator communicator = new Communicator();
-DroneState droneState = new DroneState();
+import Missions.*;
 
-    Flier(){
+public class Flier implements Runnable{
+Communicator communicator = new Communicator();
+//DroneState droneState = new DroneState();
+
+    public Flier(){
 //        Flier flier = new Flier();
 //        Thread thread = new Thread(flier);
 //        thread.start();
@@ -14,7 +17,7 @@ DroneState droneState = new DroneState();
 //        //drone state method
 //        String ReceivedMessage =  null;
 //        try {
-//            ReceivedMessage=communicator.receiveReply();
+//            ReceivedMessage=communicator.receiveData();
 //            Status status = new Status(ReceivedMessage);
 //            droneState.updateFlyingInfo(status);
 //            Thread.sleep(100);
@@ -30,21 +33,26 @@ DroneState droneState = new DroneState();
         System.out.println("Enter 1 for Mission1: Takeoff Forward Backward Land");
         System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
         System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
+        System.out.println("Enter 4 for a Custom Mission");
 
         Scanner scanner = new Scanner(System.in);
         int selectedMission = scanner.nextInt();
 
         if (selectedMission == 1){
         Mission mission = new Mission1();
-        mission.sendCommand();
+
         }
         else if (selectedMission == 2){
         Mission mission = new Mission2();
-        mission.sendCommand();
+
         }
         else if (selectedMission == 3){
         Mission mission = new Mission3();
-        mission.sendCommand();
+
+        }
+        else if (selectedMission == 4) {
+        Mission custommission = new customMission();
+
         }else {
         System.out.println("Select a valid drone mission");
         }

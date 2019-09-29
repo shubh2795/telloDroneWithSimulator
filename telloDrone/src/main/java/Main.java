@@ -1,3 +1,4 @@
+import DroneWorld.*;
 import java.util.Scanner;
 import java.net.*;
 import org.json.simple.JSONArray;
@@ -8,6 +9,7 @@ class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+        DatagramSocket datagramSocket=new DatagramSocket();
 
         // taking IP and drone port as the input from the user
         System.out.println("Enter the IP Address");
@@ -19,7 +21,7 @@ class Main {
         InetAddress droneAddress = InetAddress.getByName(IPAddress);
 
         // passing the droneaddress and port to the communicator
-        Communicator communicator = new Communicator(droneAddress, dronePort);
+        Communicator communicator = new Communicator(droneAddress, dronePort,datagramSocket);
 
         Flier flier = new Flier();
         flier.fly();
@@ -28,6 +30,6 @@ class Main {
 
 
 
-    JsonReader.Reader();
+
     }
 }
