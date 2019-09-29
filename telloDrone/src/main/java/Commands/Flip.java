@@ -1,10 +1,18 @@
 package Commands;
 
+import java.util.Scanner;
+
 public class Flip implements TelloCommand {
     protected String command;
 
     public static String getCommand() {
-
-        return TelloCommandValues.Flip;
+        System.out.println("Enter the distance to move upwards x= 20-500");
+        Scanner scanner = new Scanner(System.in);
+        String x = scanner.nextLine();
+        while ( x!="l" || x!="r" ||x!="b" ||x!="f" ){
+            System.out.println("Distance out of drone range. Please re-enter");
+            x = scanner.nextLine();
+        }
+        return TelloCommandValues.Flip+" "+x;
     }
 }

@@ -2,24 +2,26 @@ package Simulator;
 import java.io.IOException;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import DroneWorld.Communicator;
+import DroneWorld.*;
 
 
 public abstract class Simulator {
+
+    static DroneState droneState = new DroneState();
 
     String receivedCommand;
     int port;
     InetAddress address;
 
     //Template method pattern
-    abstract  boolean validateCommands(String receivedCommand, int port, InetAddress address)throws IOException ;
-    abstract void validateSequence()throws IOException;
+    abstract  boolean validateCommands(int port, InetAddress address)throws IOException ;
+    abstract boolean validateSequence(DroneState droneState)throws Exception;
 
     public final void validate()throws Exception{
         // template
+        validateCommands( port,  address);
+        validateSequence(droneState);
 
-        validateCommands(receivedCommand,  port,  address);
-        validateSequence();
     }
 
     public static final String reply = "ok";
@@ -39,19 +41,19 @@ public abstract class Simulator {
         InetAddress receivedAddress =communicator.getDestinationAddress();
 
         //execute validations as per the template
-        Simulator simulator = new Validation();
+        Simulator simulator = new Validation(receivedData);
         simulator.validate();
 
        // = Validation.validate(receivedData,recievedPort,receivedAddress);
-        boolean isValid= false;
+        boolean isValid=  simulator.validateCommands(recievedPort,receivedAddress);
+        boolean sendReply= simulator.validateSequence(droneState);
 
-       if (isValid == false){
+        if (isValid == false){
         communicator.sendCommand(error);
        }
-       else{
-        //communicator.sendCommand(error);
-       }
-
+        if (sendReply == true){
+            communicator.sendCommand(reply);
+        }
 
         // Clear the buffer after every message.
         }

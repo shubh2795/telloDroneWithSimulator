@@ -1,3 +1,4 @@
+package DroneWorld;
 import java.util.Date;
 
 public class DroneState {
@@ -94,7 +95,6 @@ public class DroneState {
         accelerationX = status.getAccelerationX();
         accelerationY = status.getAccelerationY();
         accelerationZ = status.getAccelerationZ();
-
         stateTimestamp = new Date();
     }
 

@@ -34,13 +34,13 @@ Communicator communicator = new Communicator();
         System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
         System.out.println("Enter 3 for Mission3: Takeoff CW360 Right Land");
         System.out.println("Enter 4 for a Custom Mission");
+        System.out.println("Enter 5 for getting mission from a CSV/Json/XML file");
 
         Scanner scanner = new Scanner(System.in);
         int selectedMission = scanner.nextInt();
 
         if (selectedMission == 1){
         Mission mission = new Mission1();
-
         }
         else if (selectedMission == 2){
         Mission mission = new Mission2();
@@ -48,12 +48,14 @@ Communicator communicator = new Communicator();
         }
         else if (selectedMission == 3){
         Mission mission = new Mission3();
-
         }
         else if (selectedMission == 4) {
         Mission custommission = new customMission();
 
-        }else {
+        }else if (selectedMission == 5) {
+            //Mission custommission = new customMission();
+        }
+        else {
         System.out.println("Select a valid drone mission");
         }
         }
