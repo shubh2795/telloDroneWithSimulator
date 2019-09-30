@@ -1,10 +1,8 @@
-import DroneWorld.*;
+import DroneWorld.Communicator;
+import DroneWorld.Flier;
 import java.util.Scanner;
 import java.net.*;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+
 class Main {
 
     public static void main(String[] args) throws Exception {
@@ -12,8 +10,9 @@ class Main {
         DatagramSocket datagramSocket=new DatagramSocket();
 
         // taking IP and drone port as the input from the user
+
         System.out.println("Enter the IP Address");
-        String IPAddress = scanner.nextLine();
+        String IPAddress = scanner.next();
 
         System.out.println("Enter the Drone Port");
         int dronePort = scanner.nextInt();
@@ -24,7 +23,7 @@ class Main {
         Communicator communicator = new Communicator(droneAddress, dronePort,datagramSocket);
 
         Flier flier = new Flier();
-        flier.fly();
+        flier.fly(communicator);
 
 
 

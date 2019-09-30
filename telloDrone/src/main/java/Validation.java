@@ -1,15 +1,15 @@
-package Simulator;
+
 import java.io.IOException;
-import Commands.*;
 import java.lang.String;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
-
+import Commands.*;
 import DroneWorld.Communicator;
 import DroneWorld.DroneState;
 
-public class Validation extends Simulator {
+
+public class Validation {
 
 
 
@@ -17,8 +17,8 @@ public class Validation extends Simulator {
     String recievedData;
 
     List<String> commandValues = new ArrayList<>();
-
-    Validation(String recievedCommand) {
+    DroneState droneState = new DroneState();
+    public Validation(String recievedCommand) {
         recievedData = recievedCommand;
         this.recievedCommand = recievedData.split(" ");
         commandValues.add(Command.getCommand());
@@ -49,10 +49,10 @@ public class Validation extends Simulator {
 
     }
 
-    @Override
     boolean validateCommands(int port, InetAddress address) throws IOException {
 
-        if ((commandValues.contains(recievedCommand[0]) && recievedCommand[1].isEmpty())) {
+        if (commandValues.contains(recievedCommand[0]) && recievedCommand[1].isEmpty()) {
+            System.out.println("Received" + recievedCommand[0]);
             return true;
         } else if (commandValues.contains(recievedCommand[0]) == false) {
             return false;
@@ -66,6 +66,7 @@ public class Validation extends Simulator {
                     System.out.println("Out of range distance added to " + recievedCommand[0]);
                     return false;
                 }
+
             } else if (getIndex == 18 || getIndex == 19) {
                 int distance = Integer.parseInt(recievedCommand[1]);
                 if (distance < 1 || distance > 360) {
@@ -81,10 +82,12 @@ public class Validation extends Simulator {
                 }
             }
         }
+
         return false;
+
     }
 
-    @Override
+
     boolean validateSequence(DroneState droneState) throws Exception {
         //Set in command mode
         if (recievedCommand[0] == Command.getCommand()) {

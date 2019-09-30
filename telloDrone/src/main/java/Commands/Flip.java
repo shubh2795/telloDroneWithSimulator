@@ -6,13 +6,11 @@ public class Flip implements TelloCommand {
     protected String command;
 
     public static String getCommand() {
-        System.out.println("Enter the distance to move upwards x= 20-500");
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the the type of flip");
         String x = scanner.nextLine();
-        while ( x!="l" || x!="r" ||x!="b" ||x!="f" ){
-            System.out.println("Distance out of drone range. Please re-enter");
-            x = scanner.nextLine();
-        }
-        return TelloCommandValues.Flip+" "+x;
+        String NewCommand=(new StringBuilder()).append(TelloCommandValues.Flip).append(" ").append(x).toString();
+
+        return NewCommand;
     }
 }

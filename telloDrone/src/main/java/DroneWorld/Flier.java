@@ -3,7 +3,7 @@ import java.util.Scanner;
 import Missions.*;
 
 public class Flier implements Runnable{
-Communicator communicator = new Communicator();
+
 //DroneState droneState = new DroneState();
 
     public Flier(){
@@ -28,7 +28,7 @@ Communicator communicator = new Communicator();
     }
 
 
-    public void fly() throws Exception {
+    public void fly(Communicator communicator) throws Exception {
         System.out.println("Select the drone mission");
         System.out.println("Enter 1 for Mission1: Takeoff Forward Backward Land");
         System.out.println("Enter 2 for Mission2: Takeoff Flip Land");
@@ -40,11 +40,13 @@ Communicator communicator = new Communicator();
         int selectedMission = scanner.nextInt();
 
         if (selectedMission == 1){
-        Mission mission = new Mission1();
+        Mission1 mission = new Mission1();
+        mission.sendCommand(communicator);
+
         }
         else if (selectedMission == 2){
-        Mission mission = new Mission2();
-
+        Mission2 mission = new Mission2();
+        mission.sendCommand(communicator);
         }
         else if (selectedMission == 3){
         Mission mission = new Mission3();

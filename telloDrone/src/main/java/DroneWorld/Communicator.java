@@ -4,10 +4,10 @@ import java.nio.charset.StandardCharsets;
 
 public class Communicator {
 
-	InetAddress destinationAddress;
-	int destinationPort;
+	InetAddress destinationAddress=null;
+	int destinationPort=0;
 	DatagramSocket udpClient;
-
+	DatagramPacket datagramPacket;
 
 
 	public Communicator(){}
@@ -21,7 +21,7 @@ public class Communicator {
 		this.destinationAddress = destinationAddress;
 		this.destinationPort = dronePort;
 		this.udpClient = udpClient;
-		System.out.println("Connected to Tello's IP:" + destinationAddress + "and Port:" + dronePort);
+		System.out.println("Connected to Tello's IP:" + this.destinationAddress + "and Port:" + this.destinationPort);
 	}
 
 	public int getDestinationPort()
@@ -34,24 +34,21 @@ public class Communicator {
 	}
 
 	public  void sendCommand(String droneMessage) throws Exception {
-		int Retries = 3;
+		//int Retries = 3;
 		byte[] sendData;
-
-		while (Retries > 0) {
 
 			// code for sending commands
 			sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
-			DatagramPacket datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
+			datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
 			udpClient.send(datagramPacket);
 			System.out.println("Sent " + droneMessage + " bytes to " + destinationAddress.toString() + ":" + destinationPort);
-			break;
-
-		}
-		Retries--;
-		System.out.println("Remaining retries for sending data to the drone: " + Retries);
 
 
-		receiveData();
+
+
+
+		//System.out.println("Remaining retries for sending data to the drone: " + Retries);
+
 	}
 
 	public  String receiveData() throws Exception {
@@ -59,9 +56,7 @@ public class Communicator {
 		int retries = 3;
 		String receivedReply = null;
 		receivedData = new byte[64];
-		DatagramPacket datagramPacket = new DatagramPacket(receivedData, 64);
-		destinationAddress=datagramPacket.getAddress();
-		destinationPort=datagramPacket.getPort();
+		datagramPacket = new DatagramPacket(receivedData, 64);
 		while (retries > 0) {
 
 			try {
@@ -69,6 +64,8 @@ public class Communicator {
 			} catch (SocketTimeoutException ex) {
 				datagramPacket = null;
 			}
+			if(destinationPort==0){destinationPort=datagramPacket.getPort();}
+			if(destinationAddress==null){destinationAddress=datagramPacket.getAddress();}
 			if (datagramPacket != null) {
 				System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);

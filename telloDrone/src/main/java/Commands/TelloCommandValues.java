@@ -50,10 +50,10 @@ public class TelloCommandValues {
     //Flip x (l = left, r = right, f = forward, b = back) user will enter the values of x.
     public static final String Flip = "flip";
 
-    // Fly to “x” “y” “z” at “speed” (cm/s). go x y z speed “x”,“y” “z” user will enter the values of x y z
+
     public static final String Go = "go";
 
-    // Fly at a curve according to the two given coordinates at “speed” (cm/s)
+
     public static final String Curve = "curve";
 
     //Drone Hovers in the air

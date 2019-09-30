@@ -1,15 +1,18 @@
 package Missions;
-import Commands.*;
+import DroneWorld.Communicator;
 
+public class Mission3 implements Mission {
 
-public class Mission3 extends Mission {
-    String[] droneCommand = { Command.getCommand(), TakeOff.getCommand(), Cw.getCommand(), Right.getCommand(), Land.getCommand() };
-
-
+    String droneMessage;
     @Override
-    public void selectMessages(){}
+    public void sendCommand(Communicator communicator) throws Exception{
+                String[] droneCommand = { "command", "takeoff", "back 25", "forward 25", "land" };
 
-   public Mission3(){
-        Mission.sendCommand(droneCommand);
+        for (int i = 0; i < droneCommand.length; i++) {
+            droneMessage = droneCommand[i];
+            communicator.sendCommand(droneMessage);
+            String response= communicator.receiveData();
+            System.out.println(response);
+        }
     }
 }
