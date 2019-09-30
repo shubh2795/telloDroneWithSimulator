@@ -11,8 +11,8 @@ public class Mission3 implements Mission {
         for (int i = 0; i < droneCommand.length; i++) {
             droneMessage = droneCommand[i];
             communicator.sendCommand(droneMessage);
-            String response= communicator.receiveData();
-            System.out.println(response);
+           // String response= communicator.receiveData();
+            //System.out.println(response);
         }
     }
 }

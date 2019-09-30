@@ -49,10 +49,12 @@ public class Flier implements Runnable{
         mission.sendCommand(communicator);
         }
         else if (selectedMission == 3){
-        Mission mission = new Mission3();
+        Mission3 mission = new Mission3();
+            mission.sendCommand(communicator);
         }
         else if (selectedMission == 4) {
-        Mission custommission = new customMission();
+        customMission custommission = new customMission();
+            custommission.sendCommand(communicator);
 
         }else if (selectedMission == 5) {
             //Mission custommission = new customMission();

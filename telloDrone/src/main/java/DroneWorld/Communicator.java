@@ -57,7 +57,7 @@ public class Communicator {
 		String receivedReply = null;
 		receivedData = new byte[64];
 		datagramPacket = new DatagramPacket(receivedData, 64);
-		while (retries > 0) {
+		//while (retries > 0) {
 
 			try {
 				udpClient.receive(datagramPacket);
@@ -70,22 +70,20 @@ public class Communicator {
 				System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
 				System.out.println("Receive " + receivedReply);
-				if (receivedReply.equals("ok")) {
-					break;
+				//if (receivedReply.equals("ok")) {
+		//			break;
 				}
-			}
-			System.out.println("Remaining retries: " + retries);
-			retries--;
-		}
-		if (receivedReply == null || !receivedReply.equals("ok")) {
-			return "garbage values";
+
+		//	System.out.println("Remaining retries: " + retries);
+		//	retries--;
+
+		if (receivedReply == null ) {
+			return ("nothiing string");
 
 		}
-		if ( receivedReply.equals("ok")) {
-			Thread.sleep(3000);
-		}
-
+		Thread.sleep(1000);
 		return receivedReply;
+
 	}
 
 }

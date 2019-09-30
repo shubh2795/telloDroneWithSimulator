@@ -8,7 +8,8 @@ public class Ccw implements TelloCommand {
         System.out.println("Enter the Degrees for rotation x= 0 -360");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
+        String NewCommand=(new StringBuilder()).append(TelloCommandValues.Ccw).append(" ").append(x).toString();
 
-        return TelloCommandValues.Ccw + " " +x;
+        return NewCommand;
     }
 }
