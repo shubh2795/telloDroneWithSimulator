@@ -1,13 +1,13 @@
-package ExternalFiles;
+    package ExternalFiles;
 import  java.util.Scanner;
 import java.io.FileWriter;
 public class CSVWriter
 {
     //Delimiter used in CSV file
-   private static final String COMMA_DELIMITER = ",";
+    private static final String COMMA_DELIMITER = ",";
     private static final String NEW_LINE_SEPARATOR = "\n";
 
-    @SuppressWarnings("unchecked")
+
     public  void write() throws Exception {
  try {
             Scanner cin= new Scanner(System.in);
@@ -23,13 +23,6 @@ public class CSVWriter
             }
             fileWriter.flush();
             fileWriter.close();
-
-
-            //Add a new line separator after the header
-
-            //Write a new student object list to the CSV file
-
-
 
             System.out.println("CSV file was created successfully !!!");
 

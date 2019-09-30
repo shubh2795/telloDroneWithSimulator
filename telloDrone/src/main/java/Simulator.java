@@ -4,7 +4,6 @@ import DroneWorld.DroneState;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-
 public class Simulator {
 
     static DroneState droneState = new DroneState();
@@ -22,22 +21,17 @@ public class Simulator {
             receivedData = null;
             receivedData = communicator.receiveData();
             System.out.println(receivedData);
-            System.out.println("in simulator");
-            System.out.println(receivedData);
 
             Validator validator = new Validator(receivedData);
-            System.out.println("2");
+
 
             boolean isValid = validator.validateCommands();
             if (isValid == false) {
-                System.out.println("3");
-                communicator.sendCommand("error");
+               communicator.sendCommand("error");
             } else {
-                System.out.println("4");
                 validator.validateSequence(droneState,communicator);
-
             }
-            System.out.println("5");
+
         }
     }
 

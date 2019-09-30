@@ -9,8 +9,6 @@ import DroneWorld.DroneState;
 
 public class Validator {
 
-
-
     String[] receivedData;
     DroneState droneState = new DroneState();
 
@@ -49,7 +47,7 @@ public class Validator {
         commandValues.add(TelloCommandValues.CurrentBattery);
         commandValues.add(TelloCommandValues.CurrentFlyTime);
 
-        System.out.println("In Validator");
+        System.out.println("Validating Commands");
 
         if (receivedData.length==1 && commandValues.contains(receivedData[0])) {
             System.out.println("Received" + receivedData[0]);
