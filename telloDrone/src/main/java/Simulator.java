@@ -17,7 +17,7 @@ public class Simulator {
         //Use communicators send and recv methods to communicate
         Communicator communicator = new Communicator(UdpServer);
         String receivedData;
-        while (true) {
+        //Same code as in while because  new object creates every time
             receivedData = null;
             receivedData = communicator.receiveData();
             System.out.println(receivedData);
@@ -26,6 +26,21 @@ public class Simulator {
             validator.start();
 
             boolean isValid = validator.validateCommands();
+            if (isValid == false) {
+                communicator.sendCommand("error");
+            } else {
+                validator.validateSequence(communicator);
+            }
+
+            while (true) {
+            receivedData = null;
+            receivedData = communicator.receiveData();
+            System.out.println(receivedData);
+
+
+
+
+            isValid = validator.validateCommands();
             if (isValid == false) {
                communicator.sendCommand("error");
             } else {

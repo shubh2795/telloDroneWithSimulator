@@ -43,11 +43,7 @@ public class Communicator {
 			udpClient.send(datagramPacket);
 			System.out.println("Sent " + droneMessage + " bytes to " + destinationAddress.toString() + ":" + destinationPort);
 
-
-
-
-
-		//System.out.println("Remaining retries for sending data to the drone: " + Retries);
+			//System.out.println("Remaining retries for sending data to the drone: " + Retries);
 
 	}
 
@@ -55,8 +51,8 @@ public class Communicator {
 		byte[] receivedData;
 		int retries = 3;
 		String receivedReply = null;
-		receivedData = new byte[64];
-		datagramPacket = new DatagramPacket(receivedData, 64);
+		receivedData = new byte[200];
+		datagramPacket = new DatagramPacket(receivedData, 200);
 		//while (retries > 0) {
 
 			try {
@@ -66,10 +62,11 @@ public class Communicator {
 			}
 			if(destinationPort==0){destinationPort=datagramPacket.getPort();}
 			if(destinationAddress==null){destinationAddress=datagramPacket.getAddress();}
-			if (datagramPacket != null) {
+			if (datagramPacket != null ) {
 				System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
-				System.out.println("Receive " + receivedReply);
+				if(datagramPacket.getPort() == 8889){
+				System.out.println("Receive " + receivedReply);}
 				//if (receivedReply.equals("ok")) {
 		//			break;
 				}

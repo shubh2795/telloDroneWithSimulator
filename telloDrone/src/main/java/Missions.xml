@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+<Mission>
+   
+<Message >   command  </Message>
+<Message >   takeoff  </Message>
+<Message >   flip r  </Message>
+<Message >   land  </Message>
+
+</Mission>

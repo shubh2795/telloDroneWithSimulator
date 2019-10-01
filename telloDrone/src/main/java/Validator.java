@@ -19,6 +19,7 @@ public class Validator extends Thread{
     public Validator(String receivedData) throws Exception{
 
         this.receivedData = receivedData.split(" ");
+        //response port
         DatagramSocket datagramSocketStatus = new DatagramSocket();
         communicatorStatus = new Communicator(InetAddress.getByName("127.0.0.1"),8890,datagramSocketStatus);
     }
@@ -139,7 +140,7 @@ public class Validator extends Thread{
                         droneState.getBatteryPercentage(), droneState.getBarometerMeasurement(), droneState.getMotorTime(),
                         droneState.getAccelerationX(), droneState.getAccelerationY(), droneState.getAccelerationZ());
 
-                String getMessageText = status.getMessageText();
+                String getMessageText = status.getMessageType();
                 communicatorStatus.sendCommand(getMessageText);
                 Thread.sleep(1000);
             }
