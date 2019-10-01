@@ -19,6 +19,7 @@ public class SimulatorStatusThread extends Thread {
     }
 
     public void run(){
+        System.out.println("Inside Simulator Thread for drone status update");
         while(true){
             try {
                 Status status = new Status(Validator.droneState.getPitch(), Validator.droneState.getRoll(), Validator.droneState.getYaw(), Validator.droneState.getSpeedX(), Validator.droneState.getSpeedY(), Validator.droneState.getSpeedZ(),

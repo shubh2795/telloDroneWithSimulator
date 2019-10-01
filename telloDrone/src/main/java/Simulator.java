@@ -18,24 +18,26 @@ public class Simulator {
         Communicator communicator = new Communicator(UdpServer);
         String receivedData;
         //Same code as in while because  new object creates every time
-            receivedData = null;
+            //receivedData = null;
             receivedData = communicator.receiveData();
             System.out.println(receivedData);
 
             Validator validator = new Validator(receivedData);
             //validator.start();
+        boolean isValid = validator.validateCommands();
+        if (isValid == false) {
+            communicator.sendCommand("error");
+        } else {
+            validator.validateSequence(communicator);
+        }
+
+
         SimulatorStatusThread simulatorStatusThread =new SimulatorStatusThread();
             if(Validator.droneState.isInCommandMode())
             {
                 simulatorStatusThread.start();
             }
 
-            boolean isValid = validator.validateCommands();
-            if (isValid == false) {
-                communicator.sendCommand("error");
-            } else {
-                validator.validateSequence(communicator);
-            }
 
             while (true) {
             receivedData = null;

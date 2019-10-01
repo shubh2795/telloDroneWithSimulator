@@ -24,9 +24,9 @@ class Main {
         Flier flier = new Flier();
         flier.fly(communicator);
 
-        if(FlierStatusThread.droneState.isInCommandMode()){
+
         FlierStatusThread flierStatusThread= new FlierStatusThread();
         flierStatusThread.start();
-        }
+
         }
 }
