@@ -1,20 +1,26 @@
 
 import java.io.IOException;
 import java.lang.String;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.util.ArrayList;
 import Commands.TelloCommandValues;
 import DroneWorld.Communicator;
 import DroneWorld.DroneState;
+import DroneWorld.Status;
 
 
-public class Validator {
+public class Validator extends Thread{
 
     String[] receivedData;
     DroneState droneState = new DroneState();
+    Communicator communicatorStatus;
 
-    public Validator(String receivedData) {
+    public Validator(String receivedData) throws Exception{
 
         this.receivedData = receivedData.split(" ");
+        DatagramSocket datagramSocketStatus = new DatagramSocket();
+        communicatorStatus = new Communicator(InetAddress.getByName("127.0.0.1"),8890,datagramSocketStatus);
     }
 
     boolean validateCommands() throws IOException {
@@ -88,7 +94,7 @@ public class Validator {
     }
 
 
-    void validateSequence(DroneState droneState,Communicator communicator) throws Exception {
+    void validateSequence(Communicator communicator) throws Exception {
         //Set in command mode
         if (receivedData[0].equals(TelloCommandValues.Command)) {
         droneState.setInCommandMode(true);
@@ -124,5 +130,22 @@ public class Validator {
                }
            }
 
+    }
+    public void run(){
+        while(true){
+            try {
+                Status status = new Status(droneState.getPitch(), droneState.getRoll(), droneState.getYaw(), droneState.getSpeedX(), droneState.getSpeedY(), droneState.getSpeedZ(),
+                        droneState.getLowTemperature(), droneState.getHighTemperature(), droneState.getFlightDistance(), droneState.getHeight(),
+                        droneState.getBatteryPercentage(), droneState.getBarometerMeasurement(), droneState.getMotorTime(),
+                        droneState.getAccelerationX(), droneState.getAccelerationY(), droneState.getAccelerationZ());
+
+                String getMessageText = status.getMessageText();
+                communicatorStatus.sendCommand(getMessageText);
+                Thread.sleep(1000);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

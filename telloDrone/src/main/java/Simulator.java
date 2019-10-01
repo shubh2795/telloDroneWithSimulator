@@ -6,7 +6,7 @@ import java.net.InetAddress;
 
 public class Simulator {
 
-    static DroneState droneState = new DroneState();
+
     String receivedCommand;
     int port;
     InetAddress address;
@@ -23,13 +23,13 @@ public class Simulator {
             System.out.println(receivedData);
 
             Validator validator = new Validator(receivedData);
-
+            validator.start();
 
             boolean isValid = validator.validateCommands();
             if (isValid == false) {
                communicator.sendCommand("error");
             } else {
-                validator.validateSequence(droneState,communicator);
+                validator.validateSequence(communicator);
             }
 
         }

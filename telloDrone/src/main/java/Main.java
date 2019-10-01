@@ -10,7 +10,6 @@ class Main {
         DatagramSocket datagramSocket=new DatagramSocket();
 
         // taking IP and drone port as the input from the user
-
         System.out.println("Enter the IP Address");
         String IPAddress = scanner.next();
 
@@ -23,12 +22,7 @@ class Main {
         Communicator communicator = new Communicator(droneAddress, dronePort,datagramSocket);
 
         Flier flier = new Flier();
+        flier.start();
         flier.fly(communicator);
-
-
-
-
-
-
     }
 }
