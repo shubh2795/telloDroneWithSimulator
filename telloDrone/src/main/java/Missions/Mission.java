@@ -1,6 +1,6 @@
 package Missions;
 
-import DroneWorld.Communicator;
+import Common.Communicator;
 
 
 public interface Mission {

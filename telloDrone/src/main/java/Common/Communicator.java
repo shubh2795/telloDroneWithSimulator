@@ -1,4 +1,4 @@
-package DroneWorld;
+package Common;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 
@@ -63,7 +63,8 @@ public class Communicator {
 			if(destinationPort==0){destinationPort=datagramPacket.getPort();}
 			if(destinationAddress==null){destinationAddress=datagramPacket.getAddress();}
 			if (datagramPacket != null ) {
-				System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
+				if(datagramPacket.getPort()==8889)
+					System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
 				if(datagramPacket.getPort() == 8889){
 				System.out.println("Receive " + receivedReply);}

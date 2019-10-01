@@ -1,4 +1,4 @@
-package DroneWorld;
+package Common;
 import java.util.Date;
 
 public class DroneState {

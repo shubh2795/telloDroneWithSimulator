@@ -1,7 +1,7 @@
 package Missions;
 
 import Commands.*;
-import DroneWorld.*;
+import Common.*;
 
 public class Mission1 implements Mission {
     String droneMessage;

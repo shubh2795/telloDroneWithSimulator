@@ -1,5 +1,5 @@
-import DroneWorld.Communicator;
-import DroneWorld.Flier;
+import Common.Communicator;
+import Flier.*;
 import java.util.Scanner;
 import java.net.*;
 
@@ -22,7 +22,11 @@ class Main {
         Communicator communicator = new Communicator(droneAddress, dronePort,datagramSocket);
 
         Flier flier = new Flier();
-        flier.start();
         flier.fly(communicator);
-    }
+
+        if(FlierStatusThread.droneState.isInCommandMode()){
+        FlierStatusThread flierStatusThread= new FlierStatusThread();
+        flierStatusThread.start();
+        }
+        }
 }

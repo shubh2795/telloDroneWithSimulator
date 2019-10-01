@@ -1,4 +1,4 @@
-package DroneWorld;
+package Common;
 public class Status extends Message {
     public static String getKeyWord() { return "mid"; }
 

@@ -1,6 +1,6 @@
-import DroneWorld.Communicator;
-import DroneWorld.DroneState;
 
+import Common.Communicator;
+import Simulator.*;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
@@ -11,7 +11,7 @@ public class Simulator {
     int port;
     InetAddress address;
 
-        public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         // Step 1 : Create a socket to listen at port 8889
         DatagramSocket UdpServer = new DatagramSocket(8889);
         //Use communicators send and recv methods to communicate
@@ -23,7 +23,12 @@ public class Simulator {
             System.out.println(receivedData);
 
             Validator validator = new Validator(receivedData);
-            validator.start();
+            //validator.start();
+        SimulatorStatusThread simulatorStatusThread =new SimulatorStatusThread();
+            if(Validator.droneState.isInCommandMode())
+            {
+                simulatorStatusThread.start();
+            }
 
             boolean isValid = validator.validateCommands();
             if (isValid == false) {

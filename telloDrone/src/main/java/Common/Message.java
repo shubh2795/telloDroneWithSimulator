@@ -1,4 +1,4 @@
-package DroneWorld;
+package Common;
 import java.nio.charset.StandardCharsets;
 
 public abstract class Message {

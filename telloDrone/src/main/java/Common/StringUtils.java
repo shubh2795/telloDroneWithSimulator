@@ -1,4 +1,4 @@
-package DroneWorld;
+package Common;
 
 public class StringUtils {
     public static String formatInteger(Integer value) {

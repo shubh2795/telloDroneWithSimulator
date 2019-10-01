@@ -1,6 +1,6 @@
 package Missions;
 import Commands.*;
-import DroneWorld.Communicator;
+import Common.Communicator;
 
 public class Mission3 implements Mission {
 
