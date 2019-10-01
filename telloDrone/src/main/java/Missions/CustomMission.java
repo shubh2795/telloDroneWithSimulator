@@ -1,18 +1,19 @@
 package Missions;
 
+import Commands.*;
 import Common.Communicator;
 
 import java.util.Scanner;
 
-public class customMission implements Mission {
-    String[] droneCommand;
+public class CustomMission implements Mission {
     String droneMessage;
-
     @Override
-    public void sendCommand(Communicator communicator)throws Exception{
+    public void sendCommand(Communicator communicator) throws Exception{
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter the number of commands in the Custom Mission");
         int numOfCommands = scanner.nextInt();
+        String[] droneCommand = new String[numOfCommands];
         System.out.println("Enter the commands for the Custom Mission");
         for(int i =0 ; i< numOfCommands;i++){
             droneCommand[i]= scanner.nextLine();
@@ -24,5 +25,8 @@ public class customMission implements Mission {
             String response= communicator.receiveData();
             System.out.println(response);
         }
+
     }
+
+    
 }

@@ -1,10 +1,7 @@
 package Flier;
-import java.net.DatagramSocket;
 import java.util.Scanner;
 
 import Common.Communicator;
-import Common.DroneState;
-import Common.Status;
 import Missions.*;
 
 public class Flier{
@@ -34,8 +31,8 @@ public class Flier{
             mission.sendCommand(communicator);
         }
         else if (selectedMission == 4) {
-        customMission custommission = new customMission();
-            custommission.sendCommand(communicator);
+        CustomMission custommission = new CustomMission();
+        custommission.sendCommand(communicator);
 
         }else if (selectedMission == 5) {
 
