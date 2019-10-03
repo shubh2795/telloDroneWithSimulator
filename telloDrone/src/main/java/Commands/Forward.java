@@ -8,8 +8,6 @@ public class Forward implements TelloCommand {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         String NewCommand=(new StringBuilder()).append(TelloCommandValues.Forward).append(" ").append(x).toString();
-
         return NewCommand;
-
     }
 }

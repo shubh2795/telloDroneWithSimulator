@@ -9,9 +9,7 @@ public class Communicator {
 	DatagramSocket udpClient;
 	DatagramPacket datagramPacket;
 
-
 	public Communicator(){}
-
 	public Communicator(DatagramSocket udpClient) throws Exception{
 		this.udpClient=udpClient;
 	}
@@ -34,16 +32,11 @@ public class Communicator {
 	}
 
 	public  void sendCommand(String droneMessage) throws Exception {
-		//int Retries = 3;
-		byte[] sendData;
-
-			// code for sending commands
-			sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
+			System.out.println("Received drone message"+droneMessage);
+			byte[] sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
 			datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
 			udpClient.send(datagramPacket);
 			System.out.println("Sent " + droneMessage + " bytes to " + destinationAddress.toString() + ":" + destinationPort);
-
-			//System.out.println("Remaining retries for sending data to the drone: " + Retries);
 
 	}
 

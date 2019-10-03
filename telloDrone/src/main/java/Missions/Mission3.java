@@ -1,19 +1,15 @@
 package Missions;
 import Commands.*;
-import Common.Communicator;
+import Flier.Flier;
 
-public class Mission3 implements Mission {
 
-    String droneMessage;
+public class Mission3 extends Mission {
+
+
     @Override
-    public void sendCommand(Communicator communicator) throws Exception{
-    String[] droneCommand = { Command.getCommand(), TakeOff.getCommand(),Right.getCommand() ,Cw.getCommand(),Ccw.getCommand(),Left.getCommand() ,Land.getCommand() };
+    public void sendOtherCommands(Flier flier) throws Exception{
 
-        for (int i = 0; i < droneCommand.length; i++) {
-            droneMessage = droneCommand[i];
-            communicator.sendCommand(droneMessage);
-           String response= communicator.receiveData();
-            System.out.println(response);
-        }
+        String[] droneCommand = { Right.getCommand() ,Cw.getCommand(),Ccw.getCommand(),Left.getCommand()  };
+        flier.sendToCommunicator(droneCommand);
     }
 }
