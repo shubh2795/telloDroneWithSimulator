@@ -8,6 +8,5 @@ public class Back implements TelloCommand {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         String NewCommand=(new StringBuilder()).append(TelloCommandValues.Back).append(" ").append(x).toString();
-
         return NewCommand;    }
 }

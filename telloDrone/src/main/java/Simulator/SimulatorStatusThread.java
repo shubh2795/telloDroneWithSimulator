@@ -5,12 +5,15 @@ import Common.Status;
 
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
-
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 
 public class SimulatorStatusThread extends Thread {
     Communicator communicatorStatus;
+    Logger logger = Logger.getLogger("Simulator");
+    FileHandler handler;
     public SimulatorStatusThread()throws Exception{
 
         //response port
@@ -27,7 +30,13 @@ public class SimulatorStatusThread extends Thread {
                         Validator.droneState.getBatteryPercentage(), Validator.droneState.getBarometerMeasurement(), Validator.droneState.getMotorTime(),
                         Validator.droneState.getAccelerationX(), Validator.droneState.getAccelerationY(), Validator.droneState.getAccelerationZ());
 
-                String getMessageText = status.getMessageType();
+                String getMessageText = status.getMessageText();
+//                handler= new FileHandler("C:\\Users\\shubh\\IdeaProjects\\Homework2\\telloDrone\\src\\main\\java\\LogFiles\\LogFile.log");
+//                logger.addHandler(handler);
+//                SimpleFormatter formatter = new SimpleFormatter();
+//                handler.setFormatter(formatter);
+//                logger.info("Simulator sending:"+ getMessageText);
+//
                 communicatorStatus.sendCommand(getMessageText);
                 Thread.sleep(1000);
             }

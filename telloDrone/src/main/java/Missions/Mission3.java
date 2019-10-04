@@ -10,6 +10,6 @@ public class Mission3 extends Mission {
     public void sendOtherCommands(Flier flier) throws Exception{
 
         String[] droneCommand = { Right.getCommand() ,Cw.getCommand(),Ccw.getCommand(),Left.getCommand()  };
-        flier.sendToCommunicator(droneCommand);
+        flier.fly(droneCommand);
     }
 }

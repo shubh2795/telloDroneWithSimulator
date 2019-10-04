@@ -1,8 +1,7 @@
-package Common;
-import java.util.Date;
+    package Common;
+    import java.util.Date;
 
-public class DroneState {
-
+    public class DroneState {
     private boolean inCommandMode;
     private boolean hasTakenOff;
     private boolean videoStreamOn;
@@ -38,7 +37,6 @@ public class DroneState {
     public void setInCommandMode(boolean inCommandMode) {
         if (this.inCommandMode == inCommandMode)
             return;
-
         this.inCommandMode = inCommandMode;
         if (!inCommandMode)
             resetState();
@@ -51,8 +49,7 @@ public class DroneState {
     public void setHasTakenOff(boolean hasTakenOff) {
         if (this.hasTakenOff == hasTakenOff)
             return;
-
-        this.hasTakenOff = inCommandMode && hasTakenOff;
+    this.hasTakenOff = inCommandMode && hasTakenOff;
         if (!this.hasTakenOff)
             resetFlyingInfo();
     }
@@ -114,7 +111,6 @@ public class DroneState {
 
     public void rotate(int deltaOrientation) {
         if (!hasTakenOff) return;
-
         orientation += deltaOrientation;
         orientation = orientation % 360;
     }
@@ -227,4 +223,9 @@ public class DroneState {
         accelerationZ = 0.0;
         orientation = 0;
     }
+
+    public String getPosition(){
+        String s="positionX: "+getPositionX()+"\npositionY: "+getPositionY()+"\npositionZ: "+ getPositionZ();
+        return s;
+        }
 }

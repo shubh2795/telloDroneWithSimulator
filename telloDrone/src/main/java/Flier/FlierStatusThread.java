@@ -5,6 +5,7 @@ import Common.DroneState;
 import Common.Status;
 
 import java.net.DatagramSocket;
+import java.util.logging.Logger;
 
 public class FlierStatusThread  extends Thread {
 

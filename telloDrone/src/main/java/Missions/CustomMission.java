@@ -18,7 +18,7 @@ public class CustomMission extends Mission {
         for(int i =0 ; i< numOfCommands;i++){
             droneCommand[i]= scanner.nextLine();
         }
-        flier.sendToCommunicator(droneCommand);
+        flier.fly(droneCommand);
 
     }
 

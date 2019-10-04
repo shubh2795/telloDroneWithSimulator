@@ -9,19 +9,19 @@ public abstract class Mission {
     public void sendCommand(Flier flier) throws Exception{
 
         String[] droneCommand = { Command.getCommand()};
-        flier.sendToCommunicator(droneCommand);
+        flier.fly(droneCommand);
     }
 
     public void sendTakeOff(Flier flier) throws Exception{
        String[] droneCommand = { TakeOff.getCommand()};
         String droneMessage = droneCommand.toString();
-        flier.sendToCommunicator(droneCommand);
+        flier.fly(droneCommand);
     }
 
     public void sendLand(Flier flier) throws Exception{
 
         String[] droneCommand = {  Land.getCommand() };
-        flier.sendToCommunicator(droneCommand);
+        flier.fly(droneCommand);
     }
 
     public void sendOtherCommands(Flier flier)throws Exception{}

@@ -1,15 +1,13 @@
     package Simulator;
     import java.io.IOException;
     import java.lang.String;
-    import java.net.DatagramSocket;
-    import java.net.InetAddress;
     import java.util.ArrayList;
     import Commands.TelloCommandValues;
     import Common.Communicator;
     import Common.DroneState;
-    import Common.Status;
 
 
+    @SuppressWarnings("unchecked")
     public class Validator {
 
         String[] receivedData;
@@ -23,7 +21,6 @@
         }
 
         public boolean validateCommands() throws IOException {
-            //Creating an array list for commands validation
 
             ArrayList commandValues = new ArrayList();
 
