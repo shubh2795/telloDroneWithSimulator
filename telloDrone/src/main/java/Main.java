@@ -8,6 +8,7 @@ import java.net.*;
 class Main {
 
     public static void main(String[] args) throws Exception {
+
         Scanner scanner = new Scanner(System.in);
         DatagramSocket datagramSocket=new DatagramSocket();
 
@@ -22,6 +23,7 @@ class Main {
 
         // passing the droneaddress and port to the communicator
         Communicator communicator = new Communicator(droneAddress, dronePort,datagramSocket);
+
         Flier flier = new Flier(communicator);
 
         System.out.println("Select the drone mission");
@@ -46,10 +48,10 @@ class Main {
             Mission mission = new Mission3();
             mission.executeMission(flier);
         }
-      else if (selectedMission == 4) {
+        else if (selectedMission == 4) {
             Mission mission = new CustomMission();
             mission.executeMission(flier);
-     }
+        }
         else {
             System.out.println("Select a valid drone mission");
         }

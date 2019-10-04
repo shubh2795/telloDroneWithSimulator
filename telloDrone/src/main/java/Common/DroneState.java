@@ -104,11 +104,9 @@ public class DroneState {
 
     public void move(double deltaX, double deltaY, double deltaZ) {
         if (!hasTakenOff) return;
-
         double rotation = Math.toRadians(-orientation);
         double rotatedX = Math.cos(rotation) * deltaX - Math.sin(rotation) * deltaY;
         double rotatedY = Math.sin(rotation) * deltaX + Math.cos(rotation) * deltaY;
-
         positionX += rotatedX;
         positionY += rotatedY;
         positionZ += deltaZ;
@@ -221,7 +219,7 @@ public class DroneState {
         highTemperature = 0;
         flightDistance = 0;
         height = 0;
-        batteryPercentage = 0;
+        batteryPercentage = 40;
         barometerMeasurement = 0.0;
         motorTime = 0;
         accelerationX = 0.0;

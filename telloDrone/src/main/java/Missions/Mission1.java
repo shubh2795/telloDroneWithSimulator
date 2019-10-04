@@ -9,5 +9,6 @@ public class Mission1 extends Mission{
     public void sendOtherCommands(Flier flier) throws Exception{
         String[] droneCommand = { Flip.getCommand(),Left.getCommand() };
         flier.sendToCommunicator(droneCommand);
+
     }
 }

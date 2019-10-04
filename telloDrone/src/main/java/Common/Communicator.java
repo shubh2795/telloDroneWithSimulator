@@ -61,8 +61,9 @@ public class Communicator {
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
 				if(datagramPacket.getPort() == 8889){
 				System.out.println("Receive " + receivedReply);}
-				//if (receivedReply.equals("ok")) {
-		//			break;
+				if (receivedReply.equals("ok")) {
+
+				}
 				}
 
 		//	System.out.println("Remaining retries: " + retries);
@@ -70,8 +71,8 @@ public class Communicator {
 
 		if (receivedReply == null ) {
 			return ("nothiing string");
-
 		}
+
 		Thread.sleep(1000);
 		return receivedReply;
 

@@ -10,7 +10,7 @@ public class Flip implements TelloCommand {
         System.out.println("Enter the the type of flip");
         String x = scanner.nextLine();
         String NewCommand=(new StringBuilder()).append(TelloCommandValues.Flip).append(" ").append(x).toString();
-
         return NewCommand;
+
     }
 }

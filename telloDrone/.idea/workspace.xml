@@ -2,76 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cd173-2edc-4b51-b1b1-40d1fd95b51e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Back.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Back.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Back.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Ccw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Ccw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Ccw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentBattery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentFlyTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentFlyTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CurrentSpeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CurrentSpeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Curve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Cw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Cw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Cw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/DisableVideoStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/DisableVideoStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Down.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Down.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Emergency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/EnableVideoStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/EnableVideoStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Flip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Flip.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Flip.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Flip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Flip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Forward.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Forward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Forward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Go.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Go.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Land.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Right.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Sdk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Sdk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Serial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Serial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Speed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Speed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TakeOff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TakeOff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Up.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Common/Communicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Communicator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Common/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/Communicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExternalFiles/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExternalFiles/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExternalFiles/CSVWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExternalFiles/CSVWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExternalFiles/ExternalFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExternalFiles/ExternalFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExternalFiles/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExternalFiles/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExternalFiles/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExternalFiles/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/DroneState.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/DroneState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/DroneState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Common/DroneState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Flier/Flier.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flier/Flier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Flier/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flier/Flier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/TelloGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/TelloGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/TelloGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/TelloGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Missions/CustomMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/CustomMission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions/Mission3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/Mission3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Missions/customMission.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Missions/customMission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator/SimulatorStatusThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulator/SimulatorStatusThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulator/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$Report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL2785.tmp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,55 +45,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/CustomMission.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
@@ -160,10 +57,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission3.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/Communicator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="390">
+              <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,13 +69,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Common/Communicator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="84">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -186,8 +92,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/DroneState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="218" column="26" lean-forward="true" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -195,11 +122,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Flier/Flier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/SendAndReceive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,11 +182,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Commands/Curve.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/DisableVideoStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/Emergency.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/EnableVideoStream.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Commands/Flip.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/Go.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/Land.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/Sdk.java" />
@@ -266,22 +215,24 @@
         <option value="$PROJECT_DIR$/src/main/java/Flier/flierStatusThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/Missions/customMission.java" />
         <option value="$PROJECT_DIR$/src/main/java/Simulator/Validator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Common/DroneState.java" />
         <option value="$PROJECT_DIR$/src/main/java/Simulator/SimulatorStatusThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/Simulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/Common/sendToCommunicator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Common/SendToCommunicator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Common/Communicator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Missions/CustomMission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Missions/Mission1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Flier/Flier.java" />
         <option value="$PROJECT_DIR$/src/main/java/Missions/Mission3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Missions/Mission.java" />
         <option value="$PROJECT_DIR$/src/main/java/Commands/Forward.java" />
         <option value="$PROJECT_DIR$/src/main/java/Missions/Mission2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Missions/CustomMission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Missions/Mission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Commands/Flip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/Communicator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Flier/Flier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/SendAndReceive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Missions/Mission1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/DroneState.java" />
       </list>
     </option>
   </component>
@@ -338,12 +289,6 @@
             </path>
             <path>
               <item name="telloDrone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Simulator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="telloDrone" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -358,7 +303,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="318" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570141070332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570154510650" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lib/json-simple-1.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -455,7 +400,7 @@
       <workItem from="1569858962584" duration="185000" />
       <workItem from="1569866391713" duration="51835000" />
       <workItem from="1569989752662" duration="4641000" />
-      <workItem from="1570038375288" duration="34637000" />
+      <workItem from="1570038375288" duration="42649000" />
     </task>
     <task id="LOCAL-00001" summary="Adding UI">
       <created>1569216190831</created>
@@ -475,13 +420,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247912000" />
+    <option name="totallyTimeSpent" value="255924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22087745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -553,20 +498,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding UI" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Commands/CurrentBattery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -641,13 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Back.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -739,13 +663,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Simulator/SimulatorStatusThread.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/DroneState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ExternalFiles/JsonReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -783,16 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ExternalFiles/ExternalFiles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -814,20 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Flip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Commands/TelloCommandValues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -837,64 +730,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.class">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Communicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Flier/Flier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/CustomMission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission3.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -913,7 +748,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/CustomMission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Flip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Back.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/TelloCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Commands/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Flier/FlierStatusThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/SendAndReceive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Flier/Flier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
@@ -925,11 +849,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="373">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Missions/Mission2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/DroneState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="218" column="26" lean-forward="true" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
         </state>
       </provider>
     </entry>
