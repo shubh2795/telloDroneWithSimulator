@@ -14,7 +14,6 @@ public abstract class Mission {
 
     public void sendTakeOff(Flier flier) throws Exception{
        String[] droneCommand = { TakeOff.getCommand()};
-        String droneMessage = droneCommand.toString();
         flier.fly(droneCommand);
     }
 

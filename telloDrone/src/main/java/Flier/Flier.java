@@ -41,6 +41,9 @@ public class Flier {
                 {
                     FlierStatusThread.droneState.setInCommandMode(true);
                 }
+                else if(droneMessage.equals(TelloCommandValues.Land)){
+                    FlierStatusThread.droneState.resetState();
+                }
                 else{
 
 

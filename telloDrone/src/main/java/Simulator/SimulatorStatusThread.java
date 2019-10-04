@@ -22,7 +22,7 @@ public class SimulatorStatusThread extends Thread {
     }
 
     public void run(){
-        System.out.println("Inside Simulator Thread for drone status update");
+
         while(true){
             try {
                 Status status = new Status(Validator.droneState.getPitch(), Validator.droneState.getRoll(), Validator.droneState.getYaw(), Validator.droneState.getSpeedX(), Validator.droneState.getSpeedY(), Validator.droneState.getSpeedZ(),
@@ -31,12 +31,6 @@ public class SimulatorStatusThread extends Thread {
                         Validator.droneState.getAccelerationX(), Validator.droneState.getAccelerationY(), Validator.droneState.getAccelerationZ());
 
                 String getMessageText = status.getMessageText();
-//                handler= new FileHandler("C:\\Users\\shubh\\IdeaProjects\\Homework2\\telloDrone\\src\\main\\java\\LogFiles\\LogFile.log");
-//                logger.addHandler(handler);
-//                SimpleFormatter formatter = new SimpleFormatter();
-//                handler.setFormatter(formatter);
-//                logger.info("Simulator sending:"+ getMessageText);
-//
                 communicatorStatus.sendCommand(getMessageText);
                 Thread.sleep(1000);
             }

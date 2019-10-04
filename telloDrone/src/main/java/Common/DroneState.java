@@ -193,7 +193,7 @@
 
     public int getOrientation() { return orientation; }
 
-    private void resetState() {
+    public void resetState() {
         videoStreamOn = false;
         hasTakenOff = false;
         stateTimestamp = new Date();

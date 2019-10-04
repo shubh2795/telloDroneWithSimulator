@@ -1,4 +1,5 @@
 package Common;
+import Commands.TelloCommand;
 import Commands.TelloCommandValues;
 import Flier.FlierStatusThread;
 import java.util.Scanner;
@@ -16,8 +17,9 @@ public class SendAndReceive {
             if((FlierStatusThread.droneState.getBatteryPercentage()>20) && FlierStatusThread.droneState.getHighTemperature()<80){
                 System.out.println(command+" mode");
                 communicator.sendCommand(command);
-
-                if(command.contains(TelloCommandValues.Left)){}
+                if(FlierStatusThread.droneState.getBatteryPercentage()>20 &&FlierStatusThread.droneState.getBatteryPercentage()<40 &&command.contains(TelloCommandValues.Flip)){
+                    communicator.sendCommand(TelloCommandValues.Right+" 50");
+                }
             }
             else {
                 System.out.println("Putting drone in "+TelloCommandValues.Land+" mode");

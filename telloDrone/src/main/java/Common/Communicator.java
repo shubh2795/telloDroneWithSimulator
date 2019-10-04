@@ -13,7 +13,7 @@ import java.util.logging.SimpleFormatter;
 	DatagramSocket udpClient;
 	DatagramPacket datagramPacket;
 
-	public Communicator(){}
+
 	public Communicator(DatagramSocket udpClient) throws Exception{
 		this.udpClient=udpClient;
 	}
@@ -26,24 +26,18 @@ import java.util.logging.SimpleFormatter;
 		System.out.println("Connected to Tello's IP:" + this.destinationAddress + "and Port:" + this.destinationPort);
 	}
 
-	public int getDestinationPort()
-	{
-		return destinationPort;
-	}
-	public InetAddress getDestinationAddress()
-	{
-		return destinationAddress;
-	}
-
 	public  void sendCommand(String droneMessage) throws Exception {
+
+
+		byte[] sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
+		datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
+		udpClient.send(datagramPacket);
+
+		if(datagramPacket.getPort()!=8890){
 			System.out.println("Received drone message"+droneMessage);
-			byte[] sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
-			datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
-			udpClient.send(datagramPacket);
-			if(datagramPacket.getPort()==8890){
 			System.out.println("Sent " + droneMessage + " bytes to " + destinationAddress.toString() + ":" + destinationPort);
-			}
-			}
+		}
+		}
 
 	public  String receiveData() throws Exception {
 		byte[] receivedData;
@@ -51,7 +45,6 @@ import java.util.logging.SimpleFormatter;
 		String receivedReply = null;
 		receivedData = new byte[200];
 		datagramPacket = new DatagramPacket(receivedData, 200);
-		//while (retries > 0) {
 
 			try {
 				udpClient.receive(datagramPacket);
@@ -64,28 +57,15 @@ import java.util.logging.SimpleFormatter;
 				if(datagramPacket.getPort()==8889){
 					System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
 				}
-//				else{
-//					handler= new FileHandler("C:\\Users\\shubh\\IdeaProjects\\Homework2\\telloDrone\\src\\main\\java\\LogFiles\\LogFile.log");
-//					logger.addHandler(handler);
-//					SimpleFormatter formatter = new SimpleFormatter();
-//					handler.setFormatter(formatter);
-//					logger.info("Received bytes"+ datagramPacket.getLength());
-//				}
+
 				receivedReply = new String(receivedData, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
 				if(datagramPacket.getPort() == 8889){
 				System.out.println("Receive " + receivedReply);}
-//				else{
-//					handler= new FileHandler("C:\\Users\\shubh\\IdeaProjects\\Homework2\\telloDrone\\src\\main\\java\\LogFiles\\LogFile1.log");
-//					logger.addHandler(handler);
-//					SimpleFormatter formatter = new SimpleFormatter();
-//					handler.setFormatter(formatter);
-//					logger.info("Received bytes"+ datagramPacket.getLength());
-//				}
 
 				}
 
 				if (receivedReply == null ) {
-					return ("nothiing string");
+					return ("Empty string");
 				}
 
 				Thread.sleep(1000);
