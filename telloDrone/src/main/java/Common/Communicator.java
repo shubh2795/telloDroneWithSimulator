@@ -6,18 +6,14 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 	public class Communicator {
-	Logger logger = Logger.getLogger("Simulator");
-	FileHandler handler;
 	InetAddress destinationAddress=null;
 	int destinationPort=0;
 	DatagramSocket udpClient;
 	DatagramPacket datagramPacket;
 
-
 	public Communicator(DatagramSocket udpClient) throws Exception{
 		this.udpClient=udpClient;
 	}
-
 
 	public Communicator(InetAddress destinationAddress, int dronePort, DatagramSocket udpClient) throws Exception {
 		this.destinationAddress = destinationAddress;
@@ -27,8 +23,6 @@ import java.util.logging.SimpleFormatter;
 	}
 
 	public  void sendCommand(String droneMessage) throws Exception {
-
-
 		byte[] sendData = droneMessage.getBytes(StandardCharsets.UTF_8);
 		datagramPacket = new DatagramPacket(sendData, sendData.length, destinationAddress, destinationPort);
 		udpClient.send(datagramPacket);
@@ -38,10 +32,11 @@ import java.util.logging.SimpleFormatter;
 			System.out.println("Sent " + droneMessage + " bytes to " + destinationAddress.toString() + ":" + destinationPort);
 		}
 		}
-
+	public  InetAddress getDestinationAddress(){return destinationAddress;}
+	public int getDestinationPort(){return destinationPort;}
+	public DatagramSocket getUdpClient(){return udpClient;}
 	public  String receiveData() throws Exception {
 		byte[] receivedData;
-		int retries = 3;
 		String receivedReply = null;
 		receivedData = new byte[200];
 		datagramPacket = new DatagramPacket(receivedData, 200);
@@ -63,11 +58,9 @@ import java.util.logging.SimpleFormatter;
 				System.out.println("Receive " + receivedReply);}
 
 				}
-
 				if (receivedReply == null ) {
 					return ("Empty string");
 				}
-
 				Thread.sleep(1000);
 				return receivedReply;
 

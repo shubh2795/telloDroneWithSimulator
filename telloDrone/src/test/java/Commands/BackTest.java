@@ -11,7 +11,7 @@ public class BackTest {
     public void getCommand() {
         int x = 50;
         String NewCommand=(new StringBuilder()).append(TelloCommandValues.Back).append(" ").append(x).toString();
-        assertEquals(NewCommand,"back 50");
+        assertEquals("back 50",NewCommand);
 
     }
 }

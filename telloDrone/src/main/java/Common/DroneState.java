@@ -212,10 +212,10 @@
         speedY = 0;
         speedZ = 0;
         lowTemperature = 0;
-        highTemperature = 0;
+        highTemperature = 40;
         flightDistance = 0;
         height = 0;
-        batteryPercentage = 40;
+        batteryPercentage = 30;
         barometerMeasurement = 0.0;
         motorTime = 0;
         accelerationX = 0.0;

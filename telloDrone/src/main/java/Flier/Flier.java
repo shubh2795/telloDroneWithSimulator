@@ -9,27 +9,23 @@ import java.util.Scanner;
 public class Flier {
 
     Communicator communicator;
-    public Flier(){
+    public Flier(){ }
 
-    }
-
-       public Flier(Communicator communicator) {
+        public Flier(Communicator communicator) {
         this.communicator = communicator;
         }
-
         public void fly(String[] droneCommand) throws Exception {
 
         for (int i = 0; i < droneCommand.length; i++) {
+
             String reply;
             String [] droneMessageSplited;
             Scanner sc = new Scanner(System.in);
-
             System.out.println("Enter the number of retries");
             int retries = sc.nextInt();
-
-
             int delX=0,delY=0,delZ=0,orientation=0;
             String droneMessage = droneCommand[i];
+
             reply=SendAndReceive.sendAndReceive(droneMessage,communicator,retries);
             if(reply.equals("ok")) {
 
@@ -45,9 +41,7 @@ public class Flier {
                     FlierStatusThread.droneState.resetState();
                 }
                 else{
-
-
-                droneMessageSplited = droneMessage.split(" ");
+                 droneMessageSplited = droneMessage.split(" ");
                 switch (droneMessageSplited[0]) {
                     case TelloCommandValues.Left:
                         delX = -Integer.parseInt(droneMessageSplited[1]);
@@ -74,14 +68,13 @@ public class Flier {
                         orientation = -Integer.parseInt((droneMessageSplited[1]));
                         break;
 
-                }}
+                }
+                }
                 FlierStatusThread.droneState.move(delX, delY, delZ);
                 FlierStatusThread.droneState.rotate(orientation);
                 System.out.println(FlierStatusThread.droneState.getPosition());
 
             }
-
-
-        }
+       }
     }
 }

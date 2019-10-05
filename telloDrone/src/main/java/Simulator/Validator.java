@@ -9,15 +9,12 @@
 
     @SuppressWarnings("unchecked")
     public class Validator {
-
-        String[] receivedData;
-      public static DroneState droneState = new DroneState();
+    String[] receivedData;
+    public static DroneState droneState = new DroneState();
 
 
         public Validator(String receivedData) throws Exception{
-
-            this.receivedData = receivedData.split(" ");
-
+        this.receivedData = receivedData.split(" ");
         }
 
         public boolean validateCommands() throws IOException {
@@ -91,7 +88,6 @@
 
 
         public void validateSequence(Communicator communicator) throws Exception {
-            //Set in command mode
             if (receivedData[0].equals(TelloCommandValues.Command)) {
             droneState.setInCommandMode(true);
             communicator.sendCommand("ok");
@@ -106,8 +102,7 @@
                 communicator.sendCommand("error");
             }
             }
-
-           else if(droneState.isInCommandMode())
+            else if(droneState.isInCommandMode())
             {
                 if((receivedData[0].equals(TelloCommandValues.CurrentBattery))){
                   communicator.sendCommand("Current Battey:65%");
@@ -122,9 +117,8 @@
                 else if(droneState.isInCommandMode()&& droneState.hasTakenOff()){
                     communicator.sendCommand("ok");
                     System.out.println(receivedData);
-
-                   }
-               }
+                 }
+            }
 
         }
 

@@ -12,7 +12,6 @@ import java.util.logging.SimpleFormatter;
 public class FlierStatusThread  extends Thread {
 
     private Logger logger;
-
     public static DroneState droneState = new DroneState();
     Communicator statusCommunicator;
 
@@ -28,8 +27,6 @@ public class FlierStatusThread  extends Thread {
 
         public void run(){
             System.out.println("Thread for refreshing drone state every 100ms ");
-            //drone state method
-
             while(true){
                 String receivedStatus =  null;
                 try {

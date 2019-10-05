@@ -26,7 +26,6 @@ public abstract class Mission {
     public void sendOtherCommands(Flier flier)throws Exception{}
 
     public final void executeMission(Flier flier)throws Exception{
-
         //Defining Skeleton
         sendCommand(flier);
         sendTakeOff(flier);

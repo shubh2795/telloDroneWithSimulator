@@ -1,5 +1,4 @@
 package Simulator;
-
 import Common.Communicator;
 import Common.Status;
 
@@ -12,13 +11,9 @@ import java.util.logging.SimpleFormatter;
 
 public class SimulatorStatusThread extends Thread {
     Communicator communicatorStatus;
-    Logger logger = Logger.getLogger("Simulator");
-    FileHandler handler;
     public SimulatorStatusThread()throws Exception{
-
-        //response port
-        DatagramSocket datagramSocketStatus = new DatagramSocket();
-        communicatorStatus = new Communicator(InetAddress.getByName("127.0.0.1"),8890,datagramSocketStatus);
+         DatagramSocket datagramSocketStatus = new DatagramSocket();
+         communicatorStatus = new Communicator(InetAddress.getByName("127.0.0.1"),8890,datagramSocketStatus);
     }
 
     public void run(){
@@ -26,9 +21,9 @@ public class SimulatorStatusThread extends Thread {
         while(true){
             try {
                 Status status = new Status(Validator.droneState.getPitch(), Validator.droneState.getRoll(), Validator.droneState.getYaw(), Validator.droneState.getSpeedX(), Validator.droneState.getSpeedY(), Validator.droneState.getSpeedZ(),
-                        Validator.droneState.getLowTemperature(), Validator.droneState.getHighTemperature(), Validator.droneState.getFlightDistance(), Validator.droneState.getHeight(),
-                        Validator.droneState.getBatteryPercentage(), Validator.droneState.getBarometerMeasurement(), Validator.droneState.getMotorTime(),
-                        Validator.droneState.getAccelerationX(), Validator.droneState.getAccelerationY(), Validator.droneState.getAccelerationZ());
+                    Validator.droneState.getLowTemperature(), Validator.droneState.getHighTemperature(), Validator.droneState.getFlightDistance(), Validator.droneState.getHeight(),
+                    Validator.droneState.getBatteryPercentage(), Validator.droneState.getBarometerMeasurement(), Validator.droneState.getMotorTime(),
+                    Validator.droneState.getAccelerationX(), Validator.droneState.getAccelerationY(), Validator.droneState.getAccelerationZ());
 
                 String getMessageText = status.getMessageText();
                 communicatorStatus.sendCommand(getMessageText);
